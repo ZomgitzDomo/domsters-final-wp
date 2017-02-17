@@ -1,0 +1,40 @@
+header {
+    color           : $flax;
+    background-color: $tuna;
+    border-color    : $dolphin;
+}
+
+#content {
+    color           : $steel-gray;
+    background-color: $almond;
+    border-color    : $dolphin;
+}
+
+#content img {
+    border-color : $malta;
+    outline-color: $bone;
+}
+
+#imagegallery a {
+    background-color: transparent;
+}
+
+th {
+    color           : $almond;
+    background-color: $cape-cod;
+}
+
+tr td {
+    color           : $steel-gray;
+    background-color: $porche;
+}
+
+tr.odd td {
+    color           : $steel-gray;
+    background-color: $flax;
+}
+
+tr.highlight td {
+    color           : $steel-gray;
+    background-color: $coral-reef;
+}
