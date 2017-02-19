@@ -21,12 +21,10 @@ function highlightRows() {
   const rows = document.getElementsByTagName('tr');
   for (let i = 0; i < rows.length; i += 1) {
     rows[i].oldClassName = rows[i].className;
-    rows[i].onmouseover = function onmouseover() {
-      addClass(this, 'highlight');
-    };
-    rows[i].onmouseout = function onmouseout() {
+    rows[i].addEventListener('mouseover', addClass(this, 'highlight'));
+    rows[i].addEventListener('mouseover', function mouseover() {
       this.className = this.oldClassName;
-    };
+    });
   }
   return true;
 }

@@ -21,7 +21,7 @@ function preparePlaceholder() {
   if (!document.createElement) return false;
   if (!document.createTextNode) return false;
   if (!document.getElementById) return false;
-  if (!document.getElementById('imagegallery')) return false;
+  if (!document.querySelector('.image-gallery')) return false;
   const placeholder = document.createElement('img');
   placeholder.setAttribute('id', 'placeholder');
   placeholder.setAttribute('src', 'img/placeholder.gif');
@@ -30,7 +30,7 @@ function preparePlaceholder() {
   description.setAttribute('id', 'description');
   const desctext = document.createTextNode('Choose an image');
   description.appendChild(desctext);
-  const gallery = document.getElementById('imagegallery');
+  const gallery = document.querySelector('.image-gallery');
   insertAfter(description, gallery);
   insertAfter(placeholder, description);
   return true;
@@ -39,13 +39,11 @@ function preparePlaceholder() {
 function prepareGallery() {
   if (!document.getElementsByTagName) return false;
   if (!document.getElementById) return false;
-  if (!document.getElementById('imagegallery')) return false;
-  const gallery = document.getElementById('imagegallery');
+  if (!document.querySelector('.image-gallery')) return false;
+  const gallery = document.querySelector('.image-gallery');
   const links = gallery.getElementsByTagName('a');
   for (let i = 0; i < links.length; i += 1) {
-    links[i].onclick = function onclick() {
-      return showPic(this);
-    };
+    links[i].addEventListener('click', showPic(this));
   }
   return true;
 }
