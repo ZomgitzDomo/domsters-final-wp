@@ -25,20 +25,25 @@ body {
 }
 
 h1 {
-    font-family: 'Georgia', 'Times New Roman', sans-serif;
-    font       : 2.4em normal;
+    font-family: 'Open Sans', sans-serif;
+    // font       : 2.4em normal;
+    margin-top : 1em;
 }
 
 h2 {
-    font-family: 'Georgia', 'Times New Roman', sans-serif;
-    font       : 1.8em normal;
+    font-family: 'Open Sans', sans-serif;
+    // font       : 1.8em normal;
     margin-top : 1em;
 }
 
 h3 {
-    font-family: 'Georgia', 'Times New Roman', sans-serif;
-    font       : 1.4em normal;
+    font-family: 'Open Sans', sans-serif;
+    // font       : 1.4em normal;
     margin-top : 1em;
+}
+ul {
+	padding: 0;
+	margin: 0;
 }
 
 a {

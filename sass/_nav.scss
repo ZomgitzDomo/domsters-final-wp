@@ -54,10 +54,7 @@ nav a:active {
     background-color: $flax;
 }
 
-nav a.here:active,
-nav a.here:hover,
-nav a.here:link,
-nav a.here:visited {
+li.current-menu-item > a {
     color           : $tital-white;
     background-color: $juniper;
 }

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kingluddite/domsters-theme/issues"
   },
-  "homepage": "https://github.com/kingluddite/domsters-theme#readme"
+  "homepage": "https://github.com/kingluddite/domsters-theme#readme",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
 }

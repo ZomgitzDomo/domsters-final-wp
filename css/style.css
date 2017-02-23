@@ -425,18 +425,20 @@ body {
   font-family: 'Helvetica', 'Arial', sans-serif; }
 
 h1 {
-  font-family: 'Georgia', 'Times New Roman', sans-serif;
-  font: 2.4em normal; }
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 1em; }
 
 h2 {
-  font-family: 'Georgia', 'Times New Roman', sans-serif;
-  font: 1.8em normal;
+  font-family: 'Open Sans', sans-serif;
   margin-top: 1em; }
 
 h3 {
-  font-family: 'Georgia', 'Times New Roman', sans-serif;
-  font: 1.4em normal;
+  font-family: 'Open Sans', sans-serif;
   margin-top: 1em; }
+
+ul {
+  padding: 0;
+  margin: 0; }
 
 a {
   font-weight: bold;
@@ -517,10 +519,7 @@ nav a:active {
   color: #667;
   background-color: #ec8; }
 
-nav a.here:active,
-nav a.here:hover,
-nav a.here:link,
-nav a.here:visited {
+li.current-menu-item > a {
   color: #eef;
   background-color: #799; }
 
@@ -529,16 +528,11 @@ header {
   background-color: #334;
   border-color: #667; }
 
-#content {
-  color: #223;
-  background-color: #edc;
-  border-color: #667; }
-
 #content img {
   border-color: #ba9;
   outline-color: #dcb; }
 
-#imagegallery a {
+.image-gallery a {
   background-color: transparent; }
 
 th {
@@ -557,6 +551,19 @@ tr.highlight td {
   color: #223;
   background-color: #cba; }
 
+.container {
+  color: #223;
+  border-color: #667;
+  border-width: .1em;
+  border-style: solid;
+  border-top-width: 0;
+  line-height: 1.8em; }
+
+.content-container {
+  padding: 2em 10%;
+  background-color: #edc;
+  overflow: auto; }
+
 header {
   background-image: url("../img/guitarist.gif");
   background-repeat: no-repeat;
@@ -564,13 +571,6 @@ header {
   border-width: .1em;
   border-style: solid;
   border-bottom-width: 0; }
-
-#content {
-  border-width: .1em;
-  border-style: solid;
-  border-top-width: 0;
-  padding: 2em 10%;
-  line-height: 1.8em; }
 
 #about header {
   background-image: url("../img/lineup.gif"); }
@@ -632,5 +632,19 @@ td {
 
 textarea {
   font-family: 'Helvetica', 'Arial', sans-serif; }
+
+footer {
+  clear: both;
+  background-color: #eb6; }
+  footer p {
+    margin: 0;
+    padding: 15px; }
+
+.page-template-default #content {
+  width: 400px;
+  float: left; }
+.page-template-default .sidebar {
+  width: 200px;
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */
